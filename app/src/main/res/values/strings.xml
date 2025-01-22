@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">City Search App</string>
+    <string name="loading">Loading\n</string>
+    <string name="loading_failed">Error</string>
+    <string name="home_page">Home Page</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="back">Back</string>
+</resources>
