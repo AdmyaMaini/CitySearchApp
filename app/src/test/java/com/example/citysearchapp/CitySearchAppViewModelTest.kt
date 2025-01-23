@@ -27,4 +27,5 @@ class CitySearchAppViewModelTest {
     private fun performSearchOperation(viewModel: CitySearchAppViewModel){
         viewModel.getSearchResult("Sam")
     }
+
 }

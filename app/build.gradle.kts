@@ -75,7 +75,8 @@ dependencies {
     // navigation testing
     androidTestImplementation(libs.androidx.navigation.testing)
     androidTestImplementation(libs.androidx.espresso.intents)
-
+// screen size
+    implementation("androidx.compose.material3:material3-window-size-class")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))

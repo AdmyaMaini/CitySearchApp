@@ -17,6 +17,8 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -27,7 +29,7 @@ import com.example.citysearchapp.ui.theme.CitySearchAppTopBar
 import com.example.citysearchapp.ui.theme.CitySearchAppViewModel
 
 class MainActivity : ComponentActivity() {
-    @OptIn(ExperimentalMaterial3Api::class)
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 //    @RequiresExtension(extension = Build.VERSION_CODES.S, version = 7)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +37,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val citySearchAppViewModel: CitySearchAppViewModel =
                 viewModel(factory = CitySearchAppViewModel.Factory)
+            val screenWidth = calculateWindowSizeClass(this)
             CitySearchAppTheme {
                 Scaffold(
                     topBar = {
@@ -46,6 +49,7 @@ class MainActivity : ComponentActivity() {
                         CitySearchApp(
                             citySearchAppViewModel.uiState,
                             citySearchAppViewModel::getSearchResult,
+                            screenWidth.widthSizeClass,
                             Modifier.padding(innerPadding)
                         )
                     }
