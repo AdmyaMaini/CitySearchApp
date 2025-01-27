@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.ui.text.google.fonts)
     implementation(libs.androidx.ui.test.junit4.android)
+    implementation(libs.androidx.animation.core.android)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.junit)
     // navigation testing

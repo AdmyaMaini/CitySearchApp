@@ -1,4 +1,4 @@
-package com.example.citysearchapp.ui.theme
+package com.example.citysearchapp.ui.theme.theme
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
