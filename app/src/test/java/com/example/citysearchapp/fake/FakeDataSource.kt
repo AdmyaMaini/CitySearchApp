@@ -9,37 +9,51 @@ object FakeDataSource {
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123",
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             ),
             Location(
                 name = "San Francisco",
                 countryName = "USA",
-                adminName = "California"
+                adminName = "California",
+                longitude = "123",
+                latitude = "123"
             )
         )
     )

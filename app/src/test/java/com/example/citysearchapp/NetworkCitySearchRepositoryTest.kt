@@ -3,6 +3,7 @@ package com.example.citysearchapp
 import com.example.citysearchapp.data.NetworkCitySearchRepository
 import com.example.citysearchapp.fake.FakeCitySearchAppApiService
 import com.example.citysearchapp.fake.FakeDataSource
+import com.example.citysearchapp.model.ApiResponse
 import com.example.citysearchapp.network.CitySearchAppApiService
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.test.runTest
